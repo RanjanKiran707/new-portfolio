@@ -17,7 +17,7 @@ export const About = () => {
         </p>
 
         <p>
-          Currently at <span className="font-medium text-slate-200">Aatmunn</span>, I architect production mobile systems that push beyond standard framework constraints. I’ve engineered custom multi-connection <span className="font-medium text-slate-200">Bluetooth Low Energy (BLE)</span> engines, built modular <span className="font-medium text-slate-200">store-and-forward</span> offline sync pipelines that guarantee 100% data integrity, and designed an <span className="font-medium text-slate-200">inter-isolate communication protocol</span> to manage concurrent background workloads smoothly.
+          At <span className="font-medium text-slate-200">Aatmunn</span>, I architected production mobile systems that push beyond standard framework constraints. I engineered custom multi-connection <span className="font-medium text-slate-200">Bluetooth Low Energy (BLE)</span> engines, built modular <span className="font-medium text-slate-200">store-and-forward</span> offline sync pipelines that guarantee 100% data integrity, and designed an <span className="font-medium text-slate-200">inter-isolate communication protocol</span> to manage concurrent background workloads smoothly.
         </p>
 
         <p>

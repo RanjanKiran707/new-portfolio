@@ -1,7 +1,12 @@
-import { PROJECTS, PERSONAL_INFO } from '../data/portfolioData';
+import React from 'react';
+import { FEATURED_PROJECTS } from '../data/portfolioData';
 import { ArrowUpRight, Github, ExternalLink } from 'lucide-react';
 
-export const Projects = () => {
+interface ProjectsProps {
+  onViewArchive: () => void;
+}
+
+export const Projects: React.FC<ProjectsProps> = ({ onViewArchive }) => {
   return (
     <section
       id="projects"
@@ -16,7 +21,7 @@ export const Projects = () => {
 
       <div>
         <ul className="group/list">
-          {PROJECTS.map((project, index) => {
+          {FEATURED_PROJECTS.map((project, index) => {
             const primaryLink = project.link || project.githubUrl;
 
             return (
@@ -25,7 +30,7 @@ export const Projects = () => {
                   {/* Hover backdrop glow */}
                   <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg" />
 
-                  {/* Left Column Icon / Tag */}
+                  {/* Left Column Tag */}
                   <div className="z-10 sm:col-span-2 mt-1">
                     <div className="inline-flex items-center gap-1.5 rounded border border-slate-700/60 bg-slate-800/40 px-2.5 py-1 text-xs font-mono text-slate-400">
                       <span>0{index + 1}</span>
@@ -109,23 +114,21 @@ export const Projects = () => {
           })}
         </ul>
 
-        {/* View all projects on GitHub */}
+        {/* View full project archive */}
         <div className="mt-12">
-          <a
-            className="inline-flex items-baseline font-semibold leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
-            href={PERSONAL_INFO.github}
-            target="_blank"
-            rel="noreferrer noopener"
-            aria-label="View Full Project Archive on GitHub"
+          <button
+            onClick={onViewArchive}
+            className="inline-flex items-baseline font-semibold leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base cursor-pointer"
+            aria-label="View Full Project Archive"
           >
             <span>
-              View Full Project Archive on{' '}
+              View Full Project{' '}
               <span className="inline-block">
-                GitHub
+                Archive
                 <ArrowUpRight className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" />
               </span>
             </span>
-          </a>
+          </button>
         </div>
       </div>
     </section>

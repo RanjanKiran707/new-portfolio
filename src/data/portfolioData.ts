@@ -8,7 +8,9 @@ export interface ExperienceItem {
 }
 
 export interface ProjectItem {
+  year: string;
   title: string;
+  madeAt?: string;
   description: string;
   link?: string;
   githubUrl?: string;
@@ -30,7 +32,7 @@ export const PERSONAL_INFO = {
 
 export const EXPERIENCES: ExperienceItem[] = [
   {
-    period: "DEC 2023 — PRESENT",
+    period: "DEC 2023 — APR 2026",
     role: "Software Engineer",
     company: "Aatmunn",
     companyUrl: "https://play.google.com/store/apps/details?id=com.aatmunn",
@@ -80,46 +82,69 @@ export const EXPERIENCES: ExperienceItem[] = [
   },
 ];
 
-export const PROJECTS: ProjectItem[] = [
+export const ALL_PROJECTS: ProjectItem[] = [
   {
+    year: "2024",
     title: "Study Media Recorder",
+    madeAt: "Personal",
     description: "An offline-first Android application designed to record short audio and video study notes, organized into custom hierarchical folders and playlists for distraction-free revision.",
     link: "https://study-media-recorder.web.app",
     githubUrl: "https://github.com/RanjanKiran707/study-media-recorder",
     skills: ["Flutter", "Dart", "Camera APIs", "Audio APIs", "Offline-First", "Local Storage"],
   },
   {
+    year: "2024",
     title: "YouTube Video Organizer",
+    madeAt: "Personal",
     description: "An Android app allowing users to save and curate YouTube videos into nested folders directly via the native Android share sheet, featuring distraction-free in-app playback with zero backend dependency.",
     link: "https://yt-video-organizer.web.app",
     githubUrl: "https://github.com/RanjanKiran707/youtube-video-organizer",
     skills: ["Flutter", "Drift (SQLite)", "Receive Sharing Intent", "IFrame Player", "Local DB"],
   },
   {
+    year: "2024",
     title: "Tenant Rent Tracker",
+    madeAt: "Personal",
     description: "A property management and tenant rent book app built for landlords to track dues, partial payments, rent histories, and overdue balances with full bilingual localization (English & Kannada).",
     link: "https://tenant-tracker.web.app",
     githubUrl: "https://github.com/RanjanKiran707/tenant-rent-tracker",
     skills: ["Flutter", "Drift (SQLite)", "Localization (EN/KN)", "Clean Architecture", "Local-First"],
   },
   {
+    year: "2023",
     title: "Cash Recorder",
+    madeAt: "Personal",
     description: "Personal finance and household cash flow application supporting nested bills, categorised expense summaries, and reactive queries with scalable MVVM architecture.",
     link: "https://cash-recorder.web.app",
     githubUrl: "https://github.com/RanjanKiran707/cash_recorder",
     skills: ["Flutter", "Material 3", "BLoC Pattern", "Isar NoSQL", "MVVM"],
   },
   {
+    year: "2023",
     title: "YouTube Music Downloader & Player",
+    madeAt: "Personal",
     description: "A cross-platform Flutter application enabling users to search YouTube, download high-quality audio streams locally, and manage offline playlists.",
     githubUrl: "https://github.com/RanjanKiran707/yt_music_downloader_player",
     skills: ["Flutter", "Dart", "Audio Pipeline", "File System API"],
   },
   {
+    year: "2023",
     title: "Calculator Cool UI",
+    madeAt: "Personal",
     description: "A sleek calculator utility built to explore physics-based theme switching transitions and smooth custom tactile keypad feedback.",
     link: "https://calculator-cool-ui.web.app",
     githubUrl: "https://github.com/RanjanKiran707/calculator-cool-UI",
     skills: ["Flutter", "Dart", "Custom Animations", "Fluid UI"],
   },
+  {
+    year: "2022",
+    title: "WhatsApp UI Clone",
+    madeAt: "Personal",
+    description: "A pixel-perfect Flutter replication of WhatsApp's signature UI, responsive messaging layouts, and navigation interactions.",
+    githubUrl: "https://github.com/RanjanKiran707/whatsapp-clone",
+    skills: ["Flutter", "Dart", "Custom UI Components"],
+  },
 ];
+
+// Show only 3 projects on the homepage
+export const FEATURED_PROJECTS: ProjectItem[] = ALL_PROJECTS.slice(0, 3);
