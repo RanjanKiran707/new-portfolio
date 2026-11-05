@@ -30,14 +30,26 @@ export const Projects: React.FC<ProjectsProps> = ({ onViewArchive }) => {
                   {/* Hover backdrop glow */}
                   <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg" />
 
-                  {/* Left Column Tag */}
-                  <div className="z-10 sm:col-span-2 mt-1">
-                    <div className="inline-flex items-center gap-1.5 rounded border border-slate-700/60 bg-slate-800/40 px-2.5 py-1 text-xs font-mono text-slate-400">
-                      <span>0{index + 1}</span>
-                      <span>•</span>
-                      <span>APP</span>
+                  {/* Left Column Screenshot / Tag */}
+                  {project.image ? (
+                    <img
+                      alt={`${project.title} screenshot`}
+                      loading="lazy"
+                      width="200"
+                      height="125"
+                      decoding="async"
+                      className="z-10 aspect-video rounded border-2 border-slate-200/10 object-cover object-top transition group-hover:border-slate-200/30 sm:col-span-2"
+                      src={project.image}
+                    />
+                  ) : (
+                    <div className="z-10 sm:col-span-2 mt-1">
+                      <div className="inline-flex items-center gap-1.5 rounded border border-slate-700/60 bg-slate-800/40 px-2.5 py-1 text-xs font-mono text-slate-400">
+                        <span>0{index + 1}</span>
+                        <span>•</span>
+                        <span>APP</span>
+                      </div>
                     </div>
-                  </div>
+                  )}
 
                   {/* Right Column Content */}
                   <div className="z-10 sm:col-span-6">

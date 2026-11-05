@@ -11,6 +11,7 @@ export interface ProjectItem {
   year: string;
   title: string;
   madeAt?: string;
+  image?: string;
   description: string;
   link?: string;
   githubUrl?: string;
@@ -21,7 +22,7 @@ export interface ProjectItem {
 export const PERSONAL_INFO = {
   name: "Ranjan Padmakiran",
   role: "Software Engineer",
-  tagline: "I build robust, offline-first mobile applications, scalable isolate concurrency architectures, and delightful cross-platform experiences.",
+  tagline: "I build robust, offline mobile applications, scalable isolate concurrency architectures, and delightful cross-platform experiences.",
   email: "ranjanpadmakiran@gmail.com",
   phone: "+91-9632903709",
   location: "Bengaluru, India",
@@ -87,15 +88,17 @@ export const ALL_PROJECTS: ProjectItem[] = [
     year: "2026",
     title: "Study Media Recorder",
     madeAt: "Personal",
-    description: "An offline-first Android application designed to record short audio and video study notes, organized into custom hierarchical folders and playlists for distraction-free revision.",
+    image: "/images/study-media-recorder.png",
+    description: "An offline Android application designed to record short audio and video study notes, organized into custom hierarchical folders and playlists for distraction-free revision.",
     link: "https://study-media-recorder.web.app",
     githubUrl: "https://github.com/RanjanKiran707/study-media-recorder",
-    skills: ["Flutter", "Dart", "Camera APIs", "Audio APIs", "Offline-First", "Local Storage"],
+    skills: ["Flutter", "Dart", "Camera APIs", "Audio APIs", "Offline App", "Local Storage"],
   },
   {
     year: "2026",
     title: "YouTube Video Organizer",
     madeAt: "Personal",
+    image: "/images/yt-video-organizer.png",
     description: "An Android app allowing users to save and curate YouTube videos into nested folders directly via the native Android share sheet, featuring distraction-free in-app playback with zero backend dependency.",
     link: "https://yt-video-organizer.web.app",
     githubUrl: "https://github.com/RanjanKiran707/youtube-video-organizer",
@@ -105,6 +108,7 @@ export const ALL_PROJECTS: ProjectItem[] = [
     year: "2026",
     title: "Tenant Rent Tracker",
     madeAt: "Personal",
+    image: "/images/tenant-tracker.png",
     description: "A property management and tenant rent book app built for landlords to track dues, partial payments, rent histories, and overdue balances with full bilingual localization (English & Kannada).",
     link: "https://tenant-tracker.web.app",
     githubUrl: "https://github.com/RanjanKiran707/tenant-rent-tracker",
@@ -114,6 +118,7 @@ export const ALL_PROJECTS: ProjectItem[] = [
     year: "2026",
     title: "Cash Recorder",
     madeAt: "Personal",
+    image: "/images/cash-recorder.png",
     description: "Personal finance and household cash flow application supporting nested bills, categorised expense summaries, and reactive queries with scalable MVVM architecture.",
     link: "https://cash-recorder.web.app",
     githubUrl: "https://github.com/RanjanKiran707/cash_recorder",
@@ -131,6 +136,7 @@ export const ALL_PROJECTS: ProjectItem[] = [
     year: "2026",
     title: "Calculator Cool UI",
     madeAt: "Personal",
+    image: "/images/calculator-cool-ui.png",
     description: "A sleek calculator utility built to explore physics-based theme switching transitions and smooth custom tactile keypad feedback.",
     link: "https://calculator-cool-ui.web.app",
     githubUrl: "https://github.com/RanjanKiran707/calculator-cool-UI",
@@ -146,5 +152,5 @@ export const ALL_PROJECTS: ProjectItem[] = [
   },
 ];
 
-// Show only 3 projects on the homepage
+// Show top 3 projects on the homepage
 export const FEATURED_PROJECTS: ProjectItem[] = ALL_PROJECTS.slice(0, 3);
