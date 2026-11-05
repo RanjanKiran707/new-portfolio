@@ -84,7 +84,7 @@ export const EXPERIENCES: ExperienceItem[] = [
 
 export const ALL_PROJECTS: ProjectItem[] = [
   {
-    year: "2024",
+    year: "2026",
     title: "Study Media Recorder",
     madeAt: "Personal",
     description: "An offline-first Android application designed to record short audio and video study notes, organized into custom hierarchical folders and playlists for distraction-free revision.",
@@ -93,7 +93,7 @@ export const ALL_PROJECTS: ProjectItem[] = [
     skills: ["Flutter", "Dart", "Camera APIs", "Audio APIs", "Offline-First", "Local Storage"],
   },
   {
-    year: "2024",
+    year: "2026",
     title: "YouTube Video Organizer",
     madeAt: "Personal",
     description: "An Android app allowing users to save and curate YouTube videos into nested folders directly via the native Android share sheet, featuring distraction-free in-app playback with zero backend dependency.",
@@ -102,7 +102,7 @@ export const ALL_PROJECTS: ProjectItem[] = [
     skills: ["Flutter", "Drift (SQLite)", "Receive Sharing Intent", "IFrame Player", "Local DB"],
   },
   {
-    year: "2024",
+    year: "2026",
     title: "Tenant Rent Tracker",
     madeAt: "Personal",
     description: "A property management and tenant rent book app built for landlords to track dues, partial payments, rent histories, and overdue balances with full bilingual localization (English & Kannada).",
@@ -111,7 +111,7 @@ export const ALL_PROJECTS: ProjectItem[] = [
     skills: ["Flutter", "Drift (SQLite)", "Localization (EN/KN)", "Clean Architecture", "Local-First"],
   },
   {
-    year: "2023",
+    year: "2026",
     title: "Cash Recorder",
     madeAt: "Personal",
     description: "Personal finance and household cash flow application supporting nested bills, categorised expense summaries, and reactive queries with scalable MVVM architecture.",
@@ -120,7 +120,7 @@ export const ALL_PROJECTS: ProjectItem[] = [
     skills: ["Flutter", "Material 3", "BLoC Pattern", "Isar NoSQL", "MVVM"],
   },
   {
-    year: "2023",
+    year: "2026",
     title: "YouTube Music Downloader & Player",
     madeAt: "Personal",
     description: "A cross-platform Flutter application enabling users to search YouTube, download high-quality audio streams locally, and manage offline playlists.",
@@ -128,7 +128,7 @@ export const ALL_PROJECTS: ProjectItem[] = [
     skills: ["Flutter", "Dart", "Audio Pipeline", "File System API"],
   },
   {
-    year: "2023",
+    year: "2026",
     title: "Calculator Cool UI",
     madeAt: "Personal",
     description: "A sleek calculator utility built to explore physics-based theme switching transitions and smooth custom tactile keypad feedback.",
@@ -137,7 +137,7 @@ export const ALL_PROJECTS: ProjectItem[] = [
     skills: ["Flutter", "Dart", "Custom Animations", "Fluid UI"],
   },
   {
-    year: "2022",
+    year: "2026",
     title: "WhatsApp UI Clone",
     madeAt: "Personal",
     description: "A pixel-perfect Flutter replication of WhatsApp's signature UI, responsive messaging layouts, and navigation interactions.",
