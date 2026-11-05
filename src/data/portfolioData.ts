@@ -35,7 +35,7 @@ export const EXPERIENCES: ExperienceItem[] = [
     period: "DEC 2023 — APR 2026",
     role: "Software Engineer",
     company: "Aatmunn",
-    companyUrl: "https://play.google.com/store/apps/details?id=com.aatmunn",
+    companyUrl: "https://aatmunn.com/",
     description: [
       "Engineered a BLE module managing multiple BLE device connections simultaneously with configurable polling intervals, custom command dispatch, and parsing logic.",
       "Designed a modular offline-first 'Store-and-Forward' caching mechanism reused across 3+ core features, guaranteeing 100% data integrity and auto-syncing upon network recovery.",
@@ -49,7 +49,7 @@ export const EXPERIENCES: ExperienceItem[] = [
     period: "JUN 2023 — DEC 2023",
     role: "Software Engineer I",
     company: "AI Bharat",
-    companyUrl: "https://play.google.com/store/apps/developer?id=AI+Bharat",
+    companyUrl: "https://aibharata.com/",
     description: [
       "Sole developer who launched 4+ cross-platform Flutter applications powering restaurant reservations, administrative portals, and AI face-swap tools.",
       "Created 4+ reusable dynamic form widgets, halving form screen creation time and accelerating feature shipping.",
@@ -60,8 +60,8 @@ export const EXPERIENCES: ExperienceItem[] = [
   {
     period: "DEC 2022 — JUN 2023",
     role: "SDE Intern",
-    company: "Kirana Fast",
-    companyUrl: "https://play.google.com/store/search?q=kirana+fast&c=apps",
+    company: "Billing Fast (Kirana Fast)",
+    companyUrl: "https://www.billingfast.com/",
     description: [
       "Collaborated with 4 interns to implement 5+ core features for billing and inventory management applications.",
       "Synchronized Indian and international repository releases, keeping multi-market deployments aligned.",
@@ -73,7 +73,7 @@ export const EXPERIENCES: ExperienceItem[] = [
     period: "FEB 2022 — DEC 2022",
     role: "SDE Intern",
     company: "AI Bharat",
-    companyUrl: "https://play.google.com/store/apps/developer?id=AI+Bharat",
+    companyUrl: "https://aibharata.com/",
     description: [
       "Built reusable real-time cryptocurrency data stream widgets integrated across 3 functional modules.",
       "Revamped 3+ trading interface screens with modern interaction patterns, driving elevated user engagement.",

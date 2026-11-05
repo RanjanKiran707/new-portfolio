@@ -21,7 +21,7 @@ export const About = () => {
         </p>
 
         <p>
-          Prior to that, I led and delivered 4+ commercial mobile applications as sole developer at <span className="font-medium text-slate-200">AI Bharat</span> and engineered thermal ESC/POS printing integrations at <span className="font-medium text-slate-200">Kirana Fast</span>. I'm a strong advocate for clean architecture, functional programming paradigms with <span className="font-medium text-teal-300">fpdart</span>, and local-first databases like PowerSync and Drift. When I'm away from the keyboard, you'll find me solving algorithmic challenges on LeetCode or out running.
+          Prior to that, I led and delivered 4+ commercial mobile applications as sole developer at <span className="font-medium text-slate-200">AI Bharat</span> and engineered thermal ESC/POS printing integrations at <span className="font-medium text-slate-200">Kirana Fast (now Billing Fast)</span>. I'm a strong advocate for clean architecture, functional programming paradigms with <span className="font-medium text-teal-300">fpdart</span>, and local-first databases like PowerSync and Drift. When I'm away from the keyboard, you'll find me solving algorithmic challenges on LeetCode or out running.
         </p>
       </div>
     </section>
