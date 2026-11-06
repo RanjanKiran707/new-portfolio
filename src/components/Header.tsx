@@ -13,6 +13,15 @@ export const Header: React.FC<HeaderProps> = ({ activeSection }) => {
     { id: 'projects', label: 'PROJECTS' },
   ];
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      window.history.pushState(null, '', `#${id}`);
+    }
+  };
+
   return (
     <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
       <div>
@@ -36,6 +45,7 @@ export const Header: React.FC<HeaderProps> = ({ activeSection }) => {
                   <a
                     className="group flex items-center py-3"
                     href={`#${item.id}`}
+                    onClick={(e) => handleNavClick(e, item.id)}
                   >
                     <span
                       className={`mr-4 h-px transition-all motion-reduce:transition-none ${
