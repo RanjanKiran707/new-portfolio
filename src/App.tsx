@@ -15,8 +15,13 @@ export function App() {
 
   useEffect(() => {
     const handleHashChange = () => {
-      setIsArchiveView(window.location.hash === '#archive');
-      window.scrollTo(0, 0);
+      const isArchive = window.location.hash === '#archive';
+      setIsArchiveView((prev) => {
+        if (!prev && isArchive) {
+          window.scrollTo(0, 0);
+        }
+        return isArchive;
+      });
     };
 
     window.addEventListener('hashchange', handleHashChange);
@@ -28,17 +33,22 @@ export function App() {
 
     const handleScroll = () => {
       const sections = ['about', 'experience', 'projects'];
-      const scrollPosition = window.scrollY + 200;
+      const scrollPosition = window.scrollY + 250;
 
-      for (const sectionId of sections) {
-        const el = document.getElementById(sectionId);
-        if (el) {
-          const top = el.offsetTop;
-          const height = el.offsetHeight;
-          if (scrollPosition >= top && scrollPosition < top + height) {
-            setActiveSection(sectionId);
-            break;
-          }
+      // If user has scrolled to the bottom of the page, activate the last section
+      if (
+        window.innerHeight + Math.round(window.scrollY) >=
+        document.documentElement.scrollHeight - 50
+      ) {
+        setActiveSection(sections[sections.length - 1]);
+        return;
+      }
+
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const el = document.getElementById(sections[i]);
+        if (el && scrollPosition >= el.offsetTop) {
+          setActiveSection(sections[i]);
+          break;
         }
       }
     };
